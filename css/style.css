@@ -51,14 +51,24 @@ img {
   clip-path: inset(50%);
   margin: -1px;
 }
-.adress {
-  font-style: normal;
+.section-title {
+  display: block;
+  margin-top: 0;
+  margin-bottom: 50px;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--title-text-color);
 }
-/**/
-.logo:hover,
-.logo:focus {
-  color: var(--accent-color);
+.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
 }
+/*----------- HEADER----------*/
+
 .logo span:hover,
 .logo span:focus {
   color: var(--accent-color);
@@ -87,8 +97,10 @@ img {
   letter-spacing: 0.03em;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-/* #F5F4FA  цвет фона*/
+.logo:hover,
+.logo:focus {
+  color: var(--accent-color);
+}
 
 /* Navigation*/
 
@@ -191,17 +203,7 @@ img {
   color: var(--accent-color);
 }
 
-.section-title {
-  display: block;
-  margin-top: 0;
-  margin-bottom: 50px;
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.16;
-  text-align: center;
-  letter-spacing: 0.03em;
-  color: var(--title-text-color);
-}
+/*----------- HERO---------*/
 .hero {
   max-width: 1600px;
   margin-left: auto;
@@ -252,10 +254,13 @@ img {
   text-transform: uppercase;
   color: var(--background-color);
 }
+/*----------- FEATURES---------*/
+
 .section-feature {
   padding-top: 94px;
   padding-bottom: 94px;
 }
+
 .feature-list {
   display: flex;
 }
@@ -295,6 +300,7 @@ img {
   width: 70px;
   height: 70px;
 }
+/*----------- WORKS---------*/
 .section-works {
   padding-bottom: 94px;
 }
@@ -331,6 +337,7 @@ img {
 .work-list-item + .work-list-item {
   margin-left: 30px;
 }
+/*----------- TEAM---------*/
 .section-team {
   padding: 94px 0;
   background-color: #f5f4fa;
@@ -398,6 +405,7 @@ img {
 .team-soc-link:focus .team-soc-icon {
   fill: #ffffff;
 }
+/*----------- CLIENTS---------*/
 .section-clients {
   display: flex;
   padding-top: 94px;
@@ -436,7 +444,7 @@ img {
   border-color: #2196f3;
   fill: #2196f3;
 }
-
+/*----------- FOOTER---------*/
 .section-footer {
   padding: 60px 0;
   background-color: #2f303a;
@@ -477,6 +485,9 @@ img {
 }
 .footer-contacts list link {
   display: block;
+}
+.adress {
+  font-style: normal;
 }
 .contacts-item-text {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -636,6 +647,7 @@ img {
 .footer-btn:hover {
   background-color: #188ce8;
 }
+/*----------- MODAL---------*/
 .backdrop {
   position: fixed;
   top: 0;
@@ -680,11 +692,7 @@ img {
 .modal-close:hover {
   fill: var(--accent-color);
 }
-.is-hidden {
-  opacity: 0;
-  visibility: hidden;
-  pointer-events: none;
-}
+
 .modal-title {
   margin-top: 40px;
   margin-bottom: 12px;
